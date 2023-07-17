@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.westga.cs1302.casino.view.CasinoCodeBehind">
+	<children>
+		<Button fx:id="dealButton" disable="true" layoutX="538.0" layoutY="333.0" mnemonicParsing="false" onAction="#onDeal" prefHeight="68.0" prefWidth="92.0" text="Deal">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="hitButton" disable="true" layoutX="233.0" layoutY="652.0" mnemonicParsing="false" onAction="#onHit" prefHeight="68.0" prefWidth="92.0" text="Hit">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="standButton" disable="true" layoutX="327.0" layoutY="652.0" mnemonicParsing="false" onAction="#onStand" prefHeight="68.0" prefWidth="92.0" text="Stand">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Button>
+		<HBox fx:id="dealerBox" alignment="CENTER_LEFT" layoutX="10.0" layoutY="136.0" prefHeight="188.0" prefWidth="620.0" spacing="5.0" style="-fx-background-color: #c0c0c0;">
+			<effect>
+				<Glow />
+			</effect>
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</padding>
+		</HBox>
+		<Label fx:id="playerScoreLabel" layoutX="21.0" layoutY="415.0" prefHeight="36.0" prefWidth="166.0" text="" textFill="WHITE">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label fx:id="dealerScoreLabel" layoutX="20.0" layoutY="100.0" prefHeight="36.0" prefWidth="188.0" text="" textFill="WHITE">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<HBox fx:id="playerBox" alignment="CENTER_LEFT" layoutX="10.0" layoutY="451.0" prefHeight="188.0" prefWidth="620.0" spacing="5.0" style="-fx-background-color: #000000;">
+			<effect>
+				<Glow />
+			</effect>
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</padding>
+		</HBox>
+		<Label fx:id="playerMoneyLabel" layoutX="21.0" layoutY="641.0" prefHeight="75.0" prefWidth="199.0" text="" textFill="WHITE">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label fx:id="potLabel" alignment="CENTER" layoutX="183.0" layoutY="333.0" prefHeight="68.0" prefWidth="285.0" text="" textFill="#84dcff">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<TextField fx:id="betTextField" layoutX="442.0" layoutY="419.0" prefHeight="27.0" prefWidth="52.0" />
+		<Label fx:id="userQuestion" layoutX="184.0" layoutY="419.0" prefHeight="27.0" prefWidth="257.0" text="How much do you want to bet?  $" textFill="WHITE">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Button fx:id="betButton" layoutX="495.0" layoutY="419.0" mnemonicParsing="false" onAction="#onBet" text="Bet!">
+			<font>
+				<Font name="System Bold" size="13.0" />
+			</font>
+		</Button>
+		<Label fx:id="gameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" prefHeight="111.0" prefWidth="635.0" text="BLACKJACK" textFill="#84dcff" wrapText="true">
+			<font>
+				<Font name="System Bold" size="40.0" />
+			</font>
+		</Label>
+		<Label fx:id="statsLabel" alignment="CENTER" layoutX="215.0" layoutY="70.0" prefHeight="68.0" prefWidth="221.0" textAlignment="CENTER" textFill="#84dcff" />
+		<Button fx:id="playButton" disable="true" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#onPlay" text="Play" />
+		<Button fx:id="checkoutButton" disable="true" layoutX="558.0" layoutY="7.0" mnemonicParsing="false" onAction="#onCheckout" text="Checkout" />
+		<Label fx:id="invisible" layoutX="636.0" layoutY="697.0" prefHeight="17.0" prefWidth="0.0" />
+	</children>
+</AnchorPane>
